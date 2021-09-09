@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    </head>
+  <body style="background:linear-gradient(to top, rgba(172, 226, 235, 0.6),rgba(9, 90, 100, 0.7))";></body>
+    <div class="abtpara">
+      <h1>About us</h1>
+      <p class="dear"><b>Dear Travelers,</b></p><p>
+               "Travelers" gives you a wonderfull exprience for<br> the people.The traverlers shopping is started since 2015.
+         We have travel accessories for the people<br> needed when travel.<br><br>
+         <p class="text">" We are the India's most populor online ticket booking services"</p><br><br><br>
+         <br><p class="swipe"><--swipe left</p></p>
+    </div>
+    <div class="abt">
+              
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../project1/abtpic1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../project1/abtpic2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../project1/abtpic3.jpg"/>
+                </div>
+                <div class="swiper-slide">
+                  <img src="../project1/abtpic4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../project1/abtpic5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../project1/abtpic6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="../project1/abtpic7.jpg" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            </div>
+           
+        
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  slideShadows: true,
+                },
+                pagination: {
+                  el: ".swiper-pagination",
+                },
+              });
+            </script>
+
+       
+          </body>
+        </html>
+        

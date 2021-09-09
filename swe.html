@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    padding-left:0px;
+    padding-top:0px;
+    background-image:linear-gradient(rgba(38, 67, 75, 0.6),rgba(43, 93, 105, 0.7)), url('../project1/pic1.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: black;
+    position:relative;
+    overflow: hidden;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar {
+  float:center;
+  overflow: hidden;
+  background-color: none; 
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: rgb(227, 228, 224);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: rgb(3, 19, 6);
+  padding: 70px 0 0;
+  
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(44, 14, 14);
+}
+.center {
+  text-align: center;
+}
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(226, 220, 220);
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: white;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+.exp button{
+    text-decoration: none;
+    font-size: 20px; 
+    color:#1F9AFE;
+    border-radius: 15px; 
+    text-decoration:none; 
+    color: black; 
+    top:50%;
+    left:250px;   
+    background:linear-gradient(to right, rgb(102, 201, 240),rgb(2, 25, 44));
+}
+.exp a{
+    top:50%;
+    right:50%;
+    transform: translate(-50%,-50%);
+}
+
+</style>
+</head>
+<body>
+<div class="navbar center">
+  <!--<a href="#home">HOME</a>-->
+  <div class="subnav">
+	<button class="subnavbtn">HOME</button>
+  </div>
+  <div class="subnav">
+	<button class="subnavbtn">ART ACCESSORIES <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content center">
+	  <a href="#">Paint brush</a>
+	  <a href="#charts">Charts</a>
+	  <a href="#Pencils"> ColorPencils</a>
+	</div>
+  </div> 
+  <div class="subnav">
+	<button class="subnavbtn">ARTIST <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content center">
+	  <a href="#bring">SHUBASHINI JAYAN</a>
+	  <a href="#deliver">SAKTHI SAMYUKTHA SAMPATHKUMAR</a>
+	  <a href="#package">JEEVA PRAGATHI</a>
+	  <a href="#express">KAVYA</a>
+	</div>
+  </div> 
+  <div class="subnav">
+	<button class="subnavbtn">PAINTINGS <i class="fa fa-caret-down"></i></button>
+	<div class="subnav-content center">
+	  <a href="#link1">BLACK & WHITE</a>
+	  <a href="#link2">ABSTRACT</a>
+	  <a href="#link3">OIL PAINTING</a>
+	  <a href="#link4">PENCIL SKETCHING</a>
+	</div>
+  </div>
+  <!--<a href="#contact">Contact</a>-->
+  <div class="subnav">
+	<button class="subnavbtn">CONTACT</button>
+  </div>
+	  <h3 style="margin-top:50px; margin: left 500px">VISION & VAREITY<br><br><em>IMAGINE...WE WILL CREATE!!!</em></h3>
+</div>
+<div class="exp">
+<button><a href="Webpage FilePath">EXPLORE</a></button>
+</div>
+<!--<h1 style="font-size:100px; color:black; margin:10px;">VISION & VAREITY</h1>
+  <p style="font-size:30px; color: black;"><em>IMAGINE...WE WILL CREATE!!!</em></p>
+  <p style="font-size: 20px; color:#1F9AFE;"><a href="Webpage FilePath";>EXPLORE</a></p> -->
+</body>
+</html>

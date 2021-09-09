@@ -1,0 +1,423 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+
+.cover1{
+    padding-left:0px;
+    padding-top:0px;
+    background-image:linear-gradient(rgba(16, 53, 63, 0.6),rgba(5, 34, 41, 0.7)), url('../project1/pic1.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color: black;
+    position:relative;
+    overflow: hidden;
+}
+ .head{
+    width:100%;
+    color:rgb(24, 17, 6);
+    position:absolute;
+    text-align:center;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+}
+.head h1{
+    width: 100%;
+    font-size:120px;
+    font-family: 'Cookie', cursive;
+    background:linear-gradient(to top, rgb(229, 231, 108), rgb(230, 8, 8),rgb(56, 8, 230));
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+      overflow: hidden;
+}
+.head p{
+    margin:0px;
+    font-size: 18px;
+    color:rgb(228, 223, 215);
+}
+nav{
+   display:flex;
+   padding:2% 6%;
+   justify-content: space-between;
+   align-items: center;
+}
+nav img{
+    width:70px;
+     border-radius:200px;
+     object-fit:cover;
+     position:absolute;
+     box-shadow: 0 1px 70px rgb(86, 190, 231);
+}
+nav img::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background:#f44336;
+    display:block;
+    margin: auto;
+    transition: 0.2s;
+
+}
+nav img:hover::after{
+    width:100%;
+}
+nav-links{
+    flex:1;
+    text-align: right;
+   
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+  
+.nav-links ul li a{
+    color:rgb(96, 209, 224);
+    text-decoration:none;
+    font-size:15px;
+    
+}
+
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background:#f4f4f5;
+    border-radius: 4px;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+    border:2px white;
+}
+.icons{
+    padding:0;
+    position:absolute;
+}
+.icons ul li{
+    width:50px ;
+     height:50px;
+     border-radius: 100%;
+}
+.footer {
+    
+    position: absolute;
+    left:0;
+    bottom:-5px;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    text-align: center;
+    overflow: visible;
+  }
+  .footer ul li{
+      padding: 8px 6px;
+     list-style: none;
+     display: inline-block;
+     position:relative;
+
+  }
+  .footer ul li img#fb{
+      width:30px;
+      height:30px;
+      border-radius: 100px;
+  }
+  .footer ul li img#insta{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+
+  }
+  .footer ul li img#twitter{
+    width:30px;
+    height:30px;
+    border-radius: 100px;
+  }
+  
+section{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    display:flex;
+    overflow: hidden;
+}
+section .bg{
+    position:absolute;
+    background-image:linear-gradient(rgba(53, 76, 80, 0.6),rgba(38, 41, 54, 0.7)), url('../project1/loginback.jpg');
+    width:100%;
+    height:100%;
+    background-position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    overflow:hidden;
+}
+section .bg .p{
+    color:rgb(148, 203, 240);
+    font-size: 50px;
+    position:absolute;
+    text-align:center;
+    top:30%;
+    right:40%;
+    transform: translate(-50%,-50%);
+}
+section .bg .img{
+    position:absolute;
+    top:50px;
+    left:100px;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+}
+section .bg a{
+    text-decoration: none;
+}
+
+
+.form-box
+{
+    width:380px;
+	height:500px;
+	position:relative;
+    top:30px;
+    left:300px;
+	margin:2% auto;
+	background:rgba(55, 72, 77, 0.486);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #6fbae61f;
+	border-radius: 30px;
+    color:white;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:5px;
+	outline:lightblue;
+	position: relative;
+    color:white;
+    
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #6fa6af;
+	border-radius: 30px;
+	transition: .5s;
+    box-shadow: lightskyblue;
+    
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.4s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.4s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 3px;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:5;
+	border-bottom: 2px solid rgb(105, 178, 226);
+	outline:rgba(132, 142, 182, 0.7);
+	background: rgb(50, 56, 63);
+    border-radius: 20px;
+   
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #63b2d6;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+    list-style: none;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:rgb(255, 255, 255);
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+    color:#fff
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+    color:#fff
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+@media (max-width: 768px)
+{
+    section .bg {
+        position: absolute;
+        background-image: linear-gradient(rgba(53, 76, 80, 0.6),rgba(38, 41, 54, 0.7)), url(../project1/loginback.jpg);
+        width: 600px;
+        height: 100%;
+        background-position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        overflow: hidden;
+    }
+    .form-box {
+        width: 350px;
+        height: 500px;
+        position: relative;
+        top: 30px;
+        left: 0px;
+        margin: 2% auto;
+        background: rgba(55, 72, 77, 0.486);
+        padding: 5px;
+        overflow: hidden;
+    }
+    section .bg .p {
+        color: rgb(148, 203, 240);
+        font-size: 15px;
+        position: absolute;
+        text-align: center;
+        top:9%;
+        bottom:80%;
+        right:225px;
+        transform: translate(-50%,-50%);
+    }
+    section .bg a{
+        display: none;
+    }
+}
+/*about page*/
+.abt {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+  }
+  
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    top:1%;
+    bottom: 1%;
+    left:0%;
+    border:3px solid rgb(50, 3, 104);
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    display: flex;
+   
+  }
+  .abtpara{
+    width:50%;
+    color:rgb(24, 17, 6);
+    position:absolute;
+    top:50%;
+    left:75%;
+    font-size: 24px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text{
+    font-size: 34px;
+    border: 5px;
+    text-decoration-thickness: 3px;
+}
+.swipe{
+    font-size: 18px;
+    text-align: left;
+}
+.dear{
+font-size: 30px;
+}
+
+@media (max-width: 768px)
+{
+    .abtpara{
+        width:100%;
+        color:rgb(24, 17, 6);
+        background-image: linear-gradient(rgba(111, 216, 235, 0.6),rgba(30, 40, 85, 0.7)), url(../project1/abtpic8.jpeg);
+        background-position: cover;
+        background-size: cover;
+        position:absolute;
+        top:60%;
+        left:50%;
+        font-size: 24px;
+        transform: translate(-50%,-50%);
+        text-align: center;
+}
+.abt{
+    display: none;
+}
